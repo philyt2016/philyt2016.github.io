@@ -1,0 +1,195 @@
+﻿body{
+    background: #f2f2f2;
+	margin:0;
+}
+header {
+	padding-top:	4em;
+}
+.carousel-caption {
+	left: 15%;
+	text-align: left;
+	max-width: 200px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  height: 25em;
+  margin: auto;
+}
+#welcomePara p{
+	padding: 1em 5em 0em 3em;
+	text-align: justify; 		
+}
+
+#welcomePara h4{
+	padding:		0em 0em 0em 2.3em;		
+}
+#welcomeButtons > button {
+	margin-top: 2px;	
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid black;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.headings {
+	margin:18px 0 25px 0;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	color: black;
+}
+
+#contactMe{
+	background:#f2f2f2;
+	color:#f2f2f2;
+	padding-bottom:20px;
+}
+
+#contactMe p{	
+	margin:0 0 5px;
+	font-size:18px;
+	line-height:1.6em;
+	color : black;
+}
+
+#formBox{
+	padding: 0px 25px 15px 25px;
+}
+
+textarea.form-control{
+    height:80px;
+}
+
+.footer {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	
+   	
+}
+
+.fa{
+	color:#4183D7;
+}
+
+.inline-p {
+	display: inline;
+}
+
+.quote-card {
+	color:black;
+	padding: 20px;
+	padding-left: 50px;
+	position: relative;
+	overflow: hidden;
+	min-height: 120px;
+  }
+
+  .quote-card p {
+	padding-top: 20px;
+	font-size: 15px;
+	line-height: 1.5;
+	margin: 0;
+	max-width: 90%;
+	text-align: justify;
+  }
+  .quote-card cite {
+	font-size: 16px;
+	margin-top: 10px;
+	display: block;
+	opacity: 0.8;
+	
+  }
+
+  .quote-card:before {
+	font-family: Georgia, serif;
+	content: "“";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 5em;
+	color:black;
+	font-weight: normal;
+  }
+
+  .quote-card:after {
+	font-family: Georgia, serif;
+	content: "”";
+	position: absolute;
+	bottom: -20px;
+	line-height: 100px;
+	right: 0px;
+	font-size: 5em;
+	color: black;
+	font-weight: normal;
+  }
+
+  .paragraphs{
+	color: black; 
+    font-size: 15px;
+  }
+
+  .titleB{
+	border: 2px 6px 12px 24px solid black;
+
+  }
+
+  .list-group-item {
+    height:auto;   
+}
+
+
+
+ 
+ 
+  
+ /*!
+ * Start Bootstrap - 3 Col Portfolio (https://startbootstrap.com/template-overviews/3-col-portfolio)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio/blob/master/LICENSE)
+ */
+
+
+  
+  .portfolio-item {
+	margin-bottom: 30px;
+  }
+  
+  .pagination {
+	margin-bottom: 30px;
+  }
+  
+
+
+
+
+ 

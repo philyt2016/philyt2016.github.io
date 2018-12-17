@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-inverse" style="position: fixed; top: 0; z-index: 401; width: 100%">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Philip Tubman</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#experiance">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contactMe">Contact Me</a>
+                    </li>
+                </ul>
+                <form action="http://www.google.com/search" method="get" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" name="q" size="22" maxlength="255" value="" class="form-control" placeholder="Search Google">
+                    </div>
+                    <button type="submit" value="Google Search" class="btn btn-default">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    <!-- Start main container -->
+    <div class="container-fluid" style="border: 4px solid black">
+        <header>
+
+            <!-- Start of Carosel -->
+            <div id="myCarousel" class="carousel slide hidden-md, hidden-sm, hidden-xs" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/Computer-SciencePic.jpg" alt="Chania" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/mlpicture.jpg" alt="MachineLearning" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/progpic.jpg" alt="Programming" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!-- End of Carosel -->
+
+
+            <div id="welcomePara">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="images/ProfilePic.jpg" class="img-thumbnail" style="margin-bottom: 2%" alt="Profile Picture">
+                    </div>
+                    <div class="col-md-8">
+                        <div style="height:193px;border-radius:5px;background:white;overflow:auto;border:0.5px solid rgb(230, 230, 226);padding:1%;margin-bottom: 3%;">
+                            <h4>Name:&nbsp;Philip Tubman</h4>
+                            <p>
+                                Hi, my name is Philip Tubman and this is my online resume. I am currently a fourth year student at ITT (Institute of Technology
+                                Tallaght) working towards earning my Bachelor Degree in Computer Science (Hons). Having worked
+                                in various sectors for several years, I took the decision to return to full time education
+                                to fulfill my interest in IT, with the aim of progressing my qualifications and skills.
+                            </p>
+                            <p>
+                                Having discovered a passion for computer science whilst studying at ITT, I aspire to have a fulfilling career in the IT sector.
+                                I particularly enjoy the subjects Software Development and Maths. I aim to work in a career
+                                that incorporates these elements in the workplace. I consider myself to have the relevant
+                                knowledge and capabilities to succeed in this industry. I am hard-working, enthusiastic and
+                                reliable. I believe my grades reflect on my dedication to this field of study. Whilst I enjoy
+                                working in a team environment, I am also very self-motivated and use my initiative.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+
+                        <button type="button" style="margin-bottom: 5px;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#MyModal">Download CV</button>
+                        <a href="#contactMe">
+                            <button type="button" class="btn btn-primary btn-block">Contact Me</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal-->
+
+        </header>
+        <!-- end home page -->
+        <div class="row">
+
+            <div class="col-md-12" style=" border-top: 4px solid black; border-bottom: 4px solid black; margin-top: 30px;">
+
+                <h2 class="text-center">Experience</h2>
+
+            </div>
+
+
+        </div>
+        <!-- start experiance page-->
+        <section>
+            <div id="experiance">
+                <br />
+                <br/>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 style="padding-bottom: 5px;">Work History</h3>
+                        <div style="height:480px;background:white;overflow:auto;border:0.5px solid rgb(7, 8, 3);padding:1%">
+                            <ul class="timeline">
+                                <li>
+                                    <a href="https://www2.deloitte.com/ie/en.html">Deloitte Ireland</a>
+                                    <p>January, 2018 - September, 2018</p>
+                                    <p>
+                                        During my time working at Deloitte Ireland, I was working as an Intern and I was assigned a position as a Consultant on the
+                                        Technical Support team. I was given an analyst role and had many duties to oblige
+                                        to including sovling technical issues, dealing with fellow emlpoyers within the company
+                                        and working to deadlines. I learned many new personal and technical skills that I
+                                        believe will help me in my career in the future.
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="https://www2.deloitte.com/ie/en.html">Deloitte Ireland</a>
+                                    <p>June, 2017 - September, 2017</p>
+                                    <p>
+                                        I spent the summer doing a two month Intern program at Deloitte Ireland. I was assigned a number of tasks to do including
+                                        upgrading machines to Windows 10, solving software and hardware issues and organising
+                                        schedules and bookings.
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#">Youth Horizons</a>
+                                    <p>August, 2014 - September, 2015</p>
+                                    <p>
+                                        During my time working at Youth Horizons, my job role was a Receptionist. I found this job very rewarding as I was working
+                                        with disadvantaged youth and encouraging them to stay in education to better their
+                                        careers. My duties included informal work with students, working alongside and reporting
+                                        to the school principal and completing general admin duties.
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#">Molloys Pub </a>
+                                    <p>January, 2013 - June, 2014</p>
+                                    <p>
+                                        I worked at Molloys as a Lounge boy. My role as a Lounge boy included serving customers food and drinks, cleaning duties,
+                                        till work and organising bookings and parties. I gained great customer service and
+                                        organisational skills whilst working at Molloys.
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">Argos</a>
+                                    <p>April, 2011 - May, 2012</p>
+                                    <p>
+                                        Whilst working at Argos my job position was a Sales Assistant. My duties included selling, restocking and merchandising,
+                                        providing excellent customer service and working to reach target goals.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">Ashbourne Security</a>
+                                    <p>June 2009 - March 2011</p>
+                                    <p style "color: black; font-size: 15px;">
+                                        I worked as a Security Guard for two years in Ashbourne on a building site. My role included duties such as monitoring the
+                                        building site, organising parking, reporting daily activities and engaging with potensial
+                                        buyers.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="padding-bottom: 5px;">Written References</h3>
+
+                        <div style="height:480px;background:white;overflow:auto;border:0.5px solid rgb(7, 8, 3);padding:1%">
+                            <blockquote class="quote-card">
+                                <p>
+                                    I highly recommend Philip Tubman as a candidate for employment. Philip was employed at Deloitte as an Intern and given a
+                                    postition on the Technical Support. He is extremly organised and efficient and he has
+                                    fantastic customer service skills. He is a team player, he can work independently and
+                                    he also follows through to ensure the job gets done. Philip would be a tremendous asset
+                                    for your company and I am highly confident in my recommendation.</p>
+
+                                <cite>
+                                    Noel - Technical Support Manager, Deloitte
+                                </cite>
+                            </blockquote>
+                            <hr>
+                            <blockquote class="quote-card">
+                                <p>
+                                    I am thrilled to recommend Philip Tubman for a position within your company. Philip is an advocate for working with disadvantaged
+                                    youth. During his time working with us, Philip encouraged the youth to reach their potential
+                                    by encouraging them to remain in education and/or to develop their employability skills.
+                                    Philip is a calm, logical, responsible and reliable person and I feel he could adapt
+                                    to any position. </p>
+
+                                <cite>
+                                    Paul - Principal, Youth Horizons
+                                </cite>
+                            </blockquote>
+                            <hr>
+                            <blockquote class="quote-card">
+                                <p>
+                                    I would highly recommend Philip Tubman as a candidate for your organization. During his time working with us he had excellent
+                                    customer service skills, he is punctual, hard working and reliable. I could always rely
+                                    on him to meet deadlines and he always exceeded our expectations. He fostered many posive
+                                    relationships both within our company and with our customers. Philip is extremely professional
+                                    and a pleasure to work wih. </p>
+
+                                <cite>
+                                    Sarah - Assistant Manager, Argos
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+
+            <div class="col-md-12" style=" border-top: 4px solid black; border-bottom: 4px solid black;margin-top: 60px;">
+
+                <h2 class="text-center">Education</h2>
+
+            </div>
+
+
+        </div>
+
+        <section>
+            <div id="education">
+                <br />
+                <br />
+                <br />
+
+
+                <div class="row">
+
+
+                    <div class="list-group">
+                        <div class="list-group-item" style="min-height: 145px;">
+                            <div class="media col-md-3">
+                                <figure class="pull-left">
+                                    <img class="media-object img-responsive" src="images/ittallaght.jpg" style=" width: auto; height: 120px; padding-bottom: 2%;float:left;padding-right: 2%;"
+                                        alt="Profile Picture"> </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="list-group-item-heading" style="margin-top:15px;"> TU Dublin - Computing</h4>
+                                <p class="list-group-item-text">
+                                    I am currently attending Technology University Dublin and am hoping to graduate in 2019 with a Bachelor of science (Honors)
+                                    Degree in computer science and programming. Below are my college results if you would
+                                    like to vist my college website, click the link.
+                                </p>
+                                <a href="https://www.it-tallaght.ie/" target="_blank">Visit TUD Website</a>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-center">Year 4</h4>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li class="active">
+                                        <a href="#1a" data-toggle="tab">Semester 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2a" data-toggle="tab">Semester 2</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content clearfix">
+                                    <div class="tab-pane active" id="1a">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Performance Architecture</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Applications Development</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Machine Learning</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Information Management</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Media Design</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Project</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane" id="2a">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Performance Architecture 2</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Applications Development 2</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Computational Theory</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Deep Learning</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Project</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Project</td>
+                                                    <td>TBD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-center">Year 3</h4>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li class="active">
+                                        <a href="#1b" data-toggle="tab">Semester 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2b" data-toggle="tab">Semester 2</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content clearfix">
+                                    <div class="tab-pane active" id="1b">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Operating Systems</td>
+                                                    <td>A</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Cloud servs and distrib comp</td>
+                                                    <td>B+</td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Advanced Databases</td>
+                                                    <td>B+</td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>WebApp Development</td>
+                                                    <td>B</td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Data Algorithms</td>
+                                                    <td>B</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Data Analysis</td>
+                                                    <td>B-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane" id="2b">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Work Placement</td>
+                                                    <td>Pass</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>N/A</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>N/A</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>N/A</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>N/A</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>N/A</td>
+                                                    <td>N/A</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-center">Year 2</h4>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li class="active">
+                                        <a href="#1c" data-toggle="tab">Semester 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2c" data-toggle="tab">Semester 2</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content clearfix">
+                                    <div class="tab-pane active" id="1c">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Software Qual Ass</td>
+                                                    <td>A</td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Networking 1</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Software Development 3</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Database Design</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Discrete Mathematics 2</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Web and Mobile Design</td>
+                                                    <td>B+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane" id="2c">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Management Science</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Information Security</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Software Development 4</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Networking 2</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Object Oriented Analy</td>
+                                                    <td>B+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2nd Year Project</td>
+                                                    <td>B</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-center">Year 1</h4>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-justified black">
+                                    <li class="active">
+                                        <a href="#1d" data-toggle="tab">Semester 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2d" data-toggle="tab">Semester 2</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content clearfix">
+                                    <div class="tab-pane active" id="1d">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Discrete Mathematics 1</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Computer Architecture</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Software Development 1</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fundament of the Web</td>
+                                                    <td>B+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Business and Information Sys</td>
+                                                    <td>B+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Learning to Learn at 3rd Lvl</td>
+                                                    <td>B+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane" id="2d">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Operating Syst Fundamentals</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Object Oriented System Analy</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Software Development 2</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Statistics</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Database Fundamentals</td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Social Media</td>
+                                                    <td>B+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+
+            <div class="col-md-12" style=" border-top: 4px solid black; border-bottom: 4px solid black;margin-top: 40px">
+
+                <h2 class="text-center">Projects</h2>
+
+            </div>
+        </div>
+
+        <section>
+            <div id="projects">
+                <br />
+
+                
+                
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h4 style="padding-bottom: 8px;"> IT Tallaght Projects</h4>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-center">4th Year Project</h4>
+                            </div>
+                            <div class="panel-body text-center">
+                                <img class="img-thumbnail" src="images/cryproj.PNG" alt="4th Year Project" style="height: 160px;width:auto;">
+                                <div style="min-height: 140px;">
+                                    <p style="padding-top: 8px;">Creating a web app with a crypto-currency portfolio which will predict when is a good
+                                        time to buy a certain crypto-currency. Developing this app using Django Framework
+                                        and Python programming language. Using Keras and Neural networks to make crypto-currency
+                                        predictions. This is an on-going project and due in May 2019 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-center">2nd Year Project</h4>
+                            </div>
+                            <div class="panel-body text-center">
+                                <img class="img-thumbnail" src="images/babyproj.PNG" alt="2nd Year Project" style="height: 160px; width:auto;">
+                                <div style="min-height: 140px;">
+                                    <p style="padding-top: 8px;"> Designed and developed an E-commerce web application as part of a team. The application
+                                        was developed in play framework and we used languages such as java, html, CSS and
+                                        java script in the process of designing our website. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-center">1st Year Project</h4>
+                            </div>
+                            <div class="panel-body text-center">
+                                <img class="img-thumbnail" src="images/javaproj.PNG" alt="Java Project" style="height: 160px;width:auto;">
+                                <div style="min-height: 140px;">
+                                    <p style="padding-top: 8px;">Developed a directory for hospitals, doctors and patients as part of a paired group.
+                                        The user could interact via a menu and search for their desired information. We used
+                                        java to create our system and then connected it to a database to enable results to
+                                        be queried.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<br />
+				<br />
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <div class="row">
+
+            <div class="col-md-12" style=" border-top: 4px solid black; border-bottom: 4px solid black;margin-top: 40px">
+
+                <h2 class="text-center">Contact Me</h2>
+
+            </div>
+        </div>
+
+
+
+
+        <div id=contactMe class="text-center">
+            <div>
+                <div class="container">
+                    <hr>
+                    <hr>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div id="formBox" style="border: 1px solid black">
+                                <h2 class="headings">Contact Me</h2>
+                                <p>Feel free to contact me by filling out the contact form or visiting my social network sites
+                                </p>
+
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="InputName">Name</label>
+                                        <input type="text" class="form-control" id="InputName" placeholder="Enter Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputEmail">Email</label>
+                                        <input type="email" class="form-control" id="InputEmail" placeholder="Enter Email">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="InputText">Your Message</label>
+                                        <textarea class="form-control" placeholder="Description"></textarea>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MyModal20">Send Message</button>
+
+
+                                </form>
+
+                            </div>
+                            <hr>
+
+
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/ptubman/" target="_blank" class="btn btn-default btn-lg">
+                                        <i class="fa fa-twitter">
+                                            <span>Twitter</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/phily.tubman" target="_blank" class="btn btn-default btn-lg">
+                                        <i class="fa fa-facebook">
+                                            <span>Facebook</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/ptubman/" target="_blank" class="btn btn-default btn-lg">
+                                        <i class="fa fa-linkedin">
+                                            <span>LinkedIn</span>
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal-->
+
+        </div>
+    </div>
+    <!-- End of Container -->
+    <div class="footer">
+        <p>Email Me at Ptubman2016@gmail.com</p>
+    </div>
+    <div class="modal fade" id="MyModal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Thank You</h3>
+                </div>
+                <div class="modal-body">
+                    Your Message has been sent. I will get back to you as soon as possible.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Success</h3>
+                </div>
+                <div class="modal-body">
+                    Philip's C.V has been downloaded
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
